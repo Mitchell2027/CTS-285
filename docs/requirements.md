@@ -28,8 +28,8 @@ interrupted before the learner intentionally exits or signs out.
 ## Functional Requirements
 
 ### FR-01
-**Requirement:** The system must allow a learner to start an arithmetic practice session.
-**Source/Rationale:** DataMan provides an arithmetic practice experience for learners.
+**Requirement:** The system must allow a learner to play between different game options.
+**Source/Rationale:** The DataMan manual have different options of games to play.
 
 ### FR-02
 **Requirement:** The system must provide feedback indicating whether a learner's submitted answer is correct or incorrect. 
@@ -42,8 +42,8 @@ of their submitted answers.
 remain available. 
 
 ### FR-04
-**Requirement:** The system must automatically save the learner's current practice state after each submitted answer. 
-**Source/Rationale:** Sessions may be interrupted before a learner intentionally exits or signs out, so saving after each submitted answer reduces the risk of losing recent practice progress. 
+**Requirement:** The system must be able to store input memory.
+**Source/Rationale:**  
 
 ### FR-05
 **Requirement:** The system must allow a learner to resume practice from the most recently saved practice state.

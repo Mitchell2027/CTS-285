@@ -3,7 +3,7 @@
 ## Project Context
 
 The project will be a web-based version of the original DataMan calculator that provides an arithmetic practice experience.
-The primary users are learners who wants math practice and adults, such as teachers or parents, who needs to check the learners'
+The primary users are learners that wants math practice and adults, such as teachers or parents, who needs to check the learners'
 activity and progress. The project is intended to be accessible through a browser, without the need of a printed manual, and
 more reliable when learners pause or leave and later return to their practice.
 
@@ -13,7 +13,7 @@ more reliable when learners pause or leave and later return to their practice.
   **Evidence:** DataMan provides an arithmetic practice experience in which learners answer math questions and receive feedback
   on their answers.
 
-- **E-02 — Source:** Elicitation case 
+- **E-02 — Source:** The Memory Bank
   **Evidence:**  Stakeholders want the modernized DataMan experience to work reliably in a web browser, be understandable without
   a printed manual, and avoid unnecessary navigation.
 
@@ -33,8 +33,7 @@ interrupted before the learner intentionally exits or signs out.
 
 ### FR-02
 **Requirement:** The system must provide feedback indicating whether a learner's submitted answer is correct or incorrect. 
-**Source/Rationale:** The case states that learners need feedback during arithmetic practice so they can understand the result
-of their submitted answers.
+**Source/Rationale:** Number Guesser states that learners will recieve feedback when guessing an answer.
 
 ### FR-03
 **Requirement:** The system must preserve a learner's saved practice progress between authenticated sessions.
@@ -42,15 +41,15 @@ of their submitted answers.
 remain available. 
 
 ### FR-04
-**Requirement:** The system must be able to store input memory.
-**Source/Rationale:**  
+**Requirement:** The system must store and retrieve input values for use in supported practice activities.
+**Source/Rationale:**  The Memory Bank feature allows learners to save input values for use during practice activities.
 
 ### FR-05
-**Requirement:** The system must allow a learner to resume practice from the most recently saved practice state.
-**Source/Rationale:** Learners may pause practice and return later, so the saved state must be usable when they return.
+**Requirement:** The system must display the game results, including the score, number of tries, and number of ticks, after the learner completes a game.
+**Source/Rationale:** The requirement is based on the game's displayed results and feedback.
 
 ### FR-06
-**Requirement:** The system must provide authorized adults with understandable information about a learner's practice activity and progress.
+**Requirement:** The system must provide authorized adults with information about a learner's practice activity and progress.
 **Source/Rationale:** Adults want to understand what learners practiced and whether progress is occurring.
 
 ## Non-Functional Requirements
@@ -60,14 +59,14 @@ remain available.
 **Source/Rationale:** Stakeholders define the modernized experience by requiring reliable browser-based access.
 
 ### NFR-02
-**Requirement:** The application must provide an understandable practice experience that does not require a printed manual for normal practice activities.
+**Requirement:** The application must provide an intuitive interface that allows learners to understand and complete normal practice activities without needing a printed manual.
 **Source/Rationale:** Stakeholders stated that the modernized experience should be understandable without a printed manual.
 
 ### NFR-03
-**Requirement:** The application must minimize unnecessary navigation steps required to start, continue, and complete practice activities.
+**Requirement:** The application must allow learners to start, continue, and complete a practice activity.
 **Source/Rationale:** Stakeholders stated that the modernized experience should avoid making learners navigate unnecessary screens.
 
-### NFR-03
+### NFR-04
 **Requirement:** The application must support learner access from commonly used devices, including school Chromebooks, phones, tablets, and home computers.
 **Source/Rationale:** Teachers identifies these devices as environments in which learners may use DataMan.
 

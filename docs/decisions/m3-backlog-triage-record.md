@@ -17,6 +17,6 @@ The account/session approach is not ready, increasing uncertainty for work that 
 - S5: Move Forward → Refine
 
 ## Reflection Prompts for Canvas
-1. Which one decision was hardest to make, and what tradeoff mattered most? Retry after an incorrect response was the hardest decision to make yet Immediate answer feedback is the most mattered requirements.
-2. Which decision changed after the complication, and why? If none changed, explain why your original decisions still held. Retry after incorrect response.
-3. What will you carry into your DataMan product backlog before the Product Owner Sprint Simulation? Immediate answer feedback.
+1. Which one decision was hardest to make, and what tradeoff mattered most? Retry after an incorrect response was the hardest decision to make. It has high value and requires little effort, but immediate answer feedback matters most because it is required for the first usable release.
+2. Which decision changed after the complication, and why? If none changed, explain why your original decisions still held. The decision for retry after an incorrect response changed from Move Forward to Refine. I still consider it a valuable feature, but I decided it needed further clarification before moving forward. This allowed me to prioritize the immediate answer feedback requirement for the first usable release.
+3. What will you carry into your DataMan product backlog before the Product Owner Sprint Simulation? I will carry forward the requirement for immediate answer feedback because it is essential to the first usable release. 

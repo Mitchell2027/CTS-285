@@ -2,29 +2,23 @@
 
 ## Project Context
 
-The project will be a web-based version of the original DataMan calculator that provides an arithmetic practice experience. The primary users are learners that wants math practice and 
-adults, such as teachers or parents, to check the learners' activity and progress. The project is intended to be accessible through a browser, without the need of a printed 
-manual, and more reliable when learners pause or leave and later return to their practice.
+The project will be a web-based version of the original DataMan calculator that provides an arithmetic practice experience. The primary users are learners that wants math practice and adults, such as teachers or parents, to check the learners' activity and progress. The project is intended to be accessible through a browser, without the need of a printed manual, and more reliable when learners pause or leave and later return to their practice.
 
 ## Evidence Notes
 
 - **E-01 — Source:** DataMan manual
-  **Evidence:** DataMan provides an arithmetic practice experience in which learners answer  math questions and receive feedback on their answers.
+**Evidence:** DataMan provides an arithmetic practice experience in which learners answer math questions and receive feedback on their answers.
 
-- **E-02 — Source:** The Memory Bank
-  **Evidence:**  Stakeholders want the modernized DataMan experience to work reliably in a web
-  browser, be understandable without
-  a printed manual, and avoid unnecessary navigation.
-
-- **E-03 — Source:** Elicitation case
-  **Evidence:**  Teachers report that learners may pause practice and return later, creating a
-  need for saved practice state to
-remain available after leaving the application.
+- **E-02 — Source:** The Memory Bank, DataMan Manual
+**Evidence:**  The manual explains that users can enter and store up to ten math problems in the system's memory bank. The system retrieves these stored problems during later practice sessions, allowing learners to review and practice previously entered problems.
+  
+- **E-03 — Source:** Number Guesser, DataMan Manual
+**Evidence:** The manual states that the system provides feedback after each guess by displaying two numbers that contain the secret number. When the learner guesses the correct number, the system displays the number of attempts taken and provides a light show. This supports the requirement for feedback in response to a learner's submitted answer.
 
 - **E-04 — Source:** Elicitation Case  
-  **Evidence:**  Learners may use DataMan on school Chromebooks, phones, tablets, and home
-  computers, and some sessions may be
-interrupted before the learner intentionally exits or signs out.
+**Evidence:**  Learners may use DataMan on school Chromebooks, phones, tablets, and home computers, and some sessions may be
+interrupted before the learner intentionally exits or signs out. Teachers also report that learners may pause practice and return later, creating a need for saved practice state to remain available after leaving the application.
+
 
 ## Functional Requirements
 

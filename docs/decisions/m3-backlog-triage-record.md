@@ -7,16 +7,16 @@
 | S2 | Preserve learner progress between sessions | Refine | Refine | High | Large | Identity/session approach | Medium |
 | S3 | Decorative theme selector | Defer | Defer | Low | Small | None | Low |
 | S4 | Parent/teacher activity summary | Refine | Refine | Medium | Medium | Activity data | Medium |
-| S5 | Retry after an incorrect response | Move Forward | Refine | High | Small | Answer-checking flow | Low |
+| S5 | Retry after an incorrect response | Move Forward | Move Forward | High | Small | Answer-checking flow | Low |
 | S6 | Advanced analytics dashboard | Defer | Defer | Medium | Large | Reporting model | High |
 
 ## Complication
 The account/session approach is not ready, increasing uncertainty for work that assumes persistent identity. The instructor stakeholder also states that immediate answer feedback is required for the first usable release.
 
 ## Decisions Changed After New Information
-- S5: Move Forward → Refine
+- No decisions changed.
 
 ## Reflection Prompts for Canvas
-1. Which one decision was hardest to make, and what tradeoff mattered most? Retry after an incorrect response was the hardest decision to make. It has high value and requires little effort, but immediate answer feedback matters most because it is required for the first usable release.
-2. Which decision changed after the complication, and why? If none changed, explain why your original decisions still held. The decision for retry after an incorrect response changed from Move Forward to Refine. I still consider it a valuable feature, but I decided it needed further clarification before moving forward. This allowed me to prioritize the immediate answer feedback requirement for the first usable release.
-3. What will you carry into your DataMan product backlog before the Product Owner Sprint Simulation? I will carry forward the requirement for immediate answer feedback because it is essential to the first usable release. 
+1. Which one decision was hardest to make, and what tradeoff mattered most? Retry after an incorrect response was the hardest decision to make because I had to consider its value and effort alongside the need to prioritize immediate answer feedback for the first usable release.
+2. Which decision changed after the complication, and why? If none changed, explain why your original decisions still held. No decisions changed after the complication. Immediate answer feedback was confirmed as a first release requirement, which reinforced the decision to move S1 forward. The identity/session approach was still unresolved, so S2 remained at Refine. The other items were not affected by the new information.
+3. What will you carry into your DataMan product backlog before the Product Owner Sprint Simulation? I will prioritize immediate answer feedback because it is required for the first usable release.

@@ -29,25 +29,24 @@ I revised `docs/requirements.md` after Module 2 in a resubmission on canvas.
 
 **Requirement ID:** FR-02
 
-**User Story:** As a learner, I want to know whether my submitted answer is correct or incorrect so that I can respond 
-appropriately during practice.
+**User Story:** As a learner, I want to know whether my submitted answer is correct or incorrect so that I can respond appropriately during practice.
 
 **Acceptance Criteria:**
 
 - Given a learner submits a correct answer during a practice session, when the system evaluates the answer, then the system displays
-feedback indicating if the answer is correct or incorrect.
+feedback indicating if the answer is correct.
+- Given a learner submits an incorrect answer during a practice session, when the system evaluates the answer, then the system displays feedback indicating the answer is incorrect.
   
 **Relative Effort:** S — This story requires less effort than stories involving saved progress, input storage, or activity reporting 
 because it focuses on providing feedback through the existing answer-checking flow.
 
-**Dependency / Constraint:**  Requires an answer-checking flow. Learners must be able to understand 
-the feedback.
+**Dependency / Constraint:**  Requires an answer-checking flow. Learners must be able to understand the feedback.
 
 **Priority:** 1
 
 **Readiness:** Move Forward
 
-**Priority Rationale:**  This is a high-value, low-effort item with no dependency. 
+**Priority Rationale:** This is a high-value, low-effort item with no dependency. 
 The instructor stakeholder explicitly requires immediate answer feedback for the first usable release.
 --------------------------
 
@@ -98,9 +97,7 @@ Confirming how each game calculates its score.
 
 **Readiness:** Move Forward
 
-**Priority Rationale:** High value because it allows learners to resume practice after interruptions without losing progress.
-However, unresolved learner identity and session management require refinement before implementaion.
-
+**Priority Rationale:** This story allows learners to understand their performance after completing a game. Displaying the score, number of tries, and number of ticks helps learners review the results of their practice activities.
 -----------------------------
 ### US-04 -  Start, Continue, and Complete Practice
 
@@ -111,7 +108,7 @@ the activity from beginning to end.
 
 **Acceptance Criteria:**
 
-- Given the learner can start an available practice activity, when the can proceed through the activity according
+- Given the learner can start an available practice activity, when the learner proceed through the activity according
 to its documented rule, then the system indicates when the activity is complete.
 
 **Relative Effort:**  M — This story requires more effort than basic browser access because it must support the 
@@ -197,7 +194,7 @@ practice activities must remain usable across the different device types identif
 **Dependency / Constraint:** The application must support completing practice sessions on the device.
 Browser access is also required by browser-based application requirements.
 
-**Priority:** 2
+**Priority:** 7
 
 **Readiness:** Move Forward
 
@@ -219,7 +216,7 @@ learner stores those values, then the system retains the values for later use.
 - Given previously stored input values are available, when the learner requests to retrieve
 them during a supported practice activity, then the system makes the stored values available for use.
 
-**Relative Effort:** Relative Effort: M — This story requires more effort than basic answer feedback
+**Relative Effort:** M — This story requires more effort than basic answer feedback
 because it must store input values and make the previously stored values available during supported practice activities.
 
 **Dependency / Constraint:** The system must support input storage and retrieval for applicable games and practice activities. 
@@ -240,13 +237,12 @@ rules allow another attempt so that I can continue practicing and respond to the
 
 **Acceptance Criteria:**
 
-- Given a learner submits an incorrect answer during a supported practice activity, when the system
-evaluates the answer, then the system provides feedback indicating that the answer is incorrect.
+- Given a learner submits an incorrect answer during a supported practice activity, when the system evaluates the answer, then the same problem is still available to answer.
 
 **Relative Effort:**  S — This story requires less effort than stories involving saved progress 
 or input storage because it focuses on allowing another attempt according to the selected game's rules.
 
-**Dependency / Constraint:** The system will need an authenticated identity approach to associate with saved progress. 
+**Dependency / Constraint:** This story depends on immediate answer feedback because the system must evaluate submitted answers and provide immediate feedback before the learner can respond to an incorrect answer. Retry behavior must also follow the rules of the selected game.
 
 **Priority:** 9
 
@@ -270,7 +266,7 @@ practice information, then the system provides the available activity and progre
 **Relative Effort:**  M — This story requires more effort than basic practice features because it must associate 
 activity and progress information with the correct learner and restrict access to authorized adults.
 
-**Dependency / Constraint:** The system will need an authenticated identity approach to associate with saved progress. 
+**Dependency / Constraint:** The system must establish an authenticated identity approach to associate activity and progress information with the correct learner. Access must be restricted to authorized parents or teachers.
 
 **Priority:** 10
 
@@ -282,31 +278,14 @@ whether practice is occurring and whether progress is being made.
 
 ## Open Questions Carried Forward
 
-List each open question or assumption from `docs/requirements.md` that affects this backlog. Do not turn an unresolved question into a confirmed story.
-
 - **Q-01** US-06 — How should a learner be identified and authenticated when returning to a saved practice session?
 - **Q-02** US-10 — What specific practice activity and progress information should authorized parents or teachers be able to view?
 - **Q-03** US-06 — Should learners have a manual save option in addition to automatic saving?
 - **Q-04** US-06 and US-10 — How long must saved learner practice states and progress information be retained?
 
-## Revisions After Triage and Release Planning
-
-State what changed in this backlog because of your triage record and your Product Owner decision record.
+## Revisions After Triage and Release Planningx
 
 - US-06 — Preserve Progress Between Sessions: Retained as a high-value requirement but marked Refine because learner identity and 
 session management remain unresolved. Source: docs/decisions/m3-backlog-triage-record.md.
 - US-01 — Immediate Answer Feedback: Retained as the first priority because it provides essential feedback with low effort. 
 Source: docs/decisions/m3-product-owner-decision-record.md.
-
-## Before You Submit
-
-- [ ] The file path is exactly `docs/product-backlog.md`.
-- [ ] All bracketed prompts and unused story blocks are deleted.
-- [ ] Every story has all eight required fields: Story ID, Requirement ID, User Story, Acceptance Criteria, Relative Effort, Dependency / Constraint, Priority, Priority Rationale.
-- [ ] Every Requirement ID exists in `docs/requirements.md`.
-- [ ] Each acceptance criterion states a result another person can observe and check.
-- [ ] The story blocks follow the Priority Order list.
-- [ ] Large or uncertain stories are marked Refine or Defer, not hidden as Move Forward.
-- [ ] No story or criterion names a framework, database, or screen layout, unless a requirement makes it a constraint.
-- [ ] The file renders correctly on GitHub.
-- [ ] The change is committed with a message that describes it.
